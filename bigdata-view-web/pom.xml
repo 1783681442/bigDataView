@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.hjc.bigdata</groupId>
+    <artifactId>bigdata-base-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../bigdata-base-parent</relativePath>
+  </parent>
+
+  <groupId>org.hjc.bigdata</groupId>
+  <artifactId>bigdata-view-web</artifactId>
+  <packaging>war</packaging>
+  <version>${bigdata.view.web.version}</version>
+  <name>car-first-web Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.hjc.bigdata</groupId>
+      <artifactId>bigdata-view-business</artifactId>
+      <version>${bigdata.view.business.version}</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>car-first-web</finalName>
+    <resources>
+      <resource>
+        <targetPath>${project.build.directory}/classes</targetPath>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>
+      <!-- jetty:run 添加jetty插件以便启动 -->
+      <plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>9.3.10.v20160621</version>
+        <configuration>
+          <stopPort>9966</stopPort>
+          <stopKey>stop</stopKey>
+          <scanIntervalSeconds>10</scanIntervalSeconds>
+          <webApp>
+            <contextPath>/</contextPath>
+          </webApp>
+        </configuration>
+      </plugin>
+      <!-- tomcat7:run -->
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <path>/</path>
+          <uriEncoding>UTF-8</uriEncoding>
+          <server>tomcat7</server>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

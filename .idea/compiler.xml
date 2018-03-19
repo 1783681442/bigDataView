@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bigdata-view-business" />
+        <module name="bigdata-view-web" />
+        <module name="car-base-core" />
+        <module name="car-first-business" />
+        <module name="car-first-web" />
+        <module name="simple-base-config" />
+        <module name="simple-base-core" />
+        <module name="simple-base-parent" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bigdata-base-parent" target="1.7" />
+      <module name="bigdata-view-business" target="1.7" />
+      <module name="bigdata-view-web" target="1.7" />
+      <module name="car-base-config" target="1.5" />
+      <module name="car-base-core" target="1.7" />
+      <module name="car-base-parent" target="1.7" />
+      <module name="car-first-business" target="1.7" />
+      <module name="car-first-web" target="1.7" />
+      <module name="simple-base-config" target="1.5" />
+      <module name="simple-base-core" target="1.7" />
+      <module name="simple-base-parent" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

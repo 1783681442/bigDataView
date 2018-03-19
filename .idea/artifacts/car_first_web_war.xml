@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="car-first-web:war">
+    <output-path>$PROJECT_DIR$/bigdata-view-web/target</output-path>
+    <root id="archive" name="car-first-web.war">
+      <element id="artifact" artifact-name="car-first-web:war exploded" />
+    </root>
+  </artifact>
+</component>

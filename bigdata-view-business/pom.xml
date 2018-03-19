@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.hjc.bigdata</groupId>
+        <artifactId>bigdata-base-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../bigdata-base-parent</relativePath>
+    </parent>
+
+    <groupId>org.hjc.bigdata</groupId>
+    <artifactId>bigdata-view-business</artifactId>
+    <version>${bigdata.view.business.version}</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hjc.bigdata</groupId>
+            <artifactId>bigdata-base-core</artifactId>
+            <version>${bigdata.base.core.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

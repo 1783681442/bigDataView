@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/bigdata-view-web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/simple-base-config/pom.xml" />
+        <option value="$PROJECT_DIR$/simple-base-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/simple-base-core/pom.xml" />
+        <option value="$PROJECT_DIR$/car-base-core/pom.xml" />
+        <option value="$PROJECT_DIR$/car-base-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/car-first-business/pom.xml" />
+        <option value="$PROJECT_DIR$/carfirstweb/pom.xml" />
+        <option value="$PROJECT_DIR$/car-first-web/pom.xml" />
+        <option value="$PROJECT_DIR$/bigdata-view-business/pom.xml" />
+        <option value="$PROJECT_DIR$/bigdata-base-core/pom.xml" />
+        <option value="$PROJECT_DIR$/bigdata-view-web/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" project-jdk-name="1.7" project-jdk-type="JavaSDK" />
+</project>
